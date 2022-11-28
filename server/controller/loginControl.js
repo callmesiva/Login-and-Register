@@ -62,7 +62,7 @@ exports.login =(req,res)=>{
                         res.render("loginpage",{msg:"Please enter your correct password"});
                     }
                     else{
-                        res.send("sucess"); 
+                        res.send("success"); 
                     }
                }
             }
