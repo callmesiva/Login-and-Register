@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="text">User Login</div>
+    {{#if msg}}
+    <p>{{msg}}</p>
+    {{/if}}
+    <form method="post" action="/auth/login">
+        <div class="data">
+            <label for="email">Email :</label>
+            <input type="email" name="email" id="email"><br>
+            <label for="password">Password :</label>
+            <input type="password" name="password" id="password"><br>
+            <button type="submit" class="btn">Login</button>
+            <a href="/home" class="backbtn">back</a><br>
+            <a class="forgetpass" href="#">forget password?</a><br>
+            <div class="signuplink">Not Have An Account?<a href="/register">Signup Now</a></div>
+        </div>
+         
+    </form>
+</div>

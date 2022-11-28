@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(23, 51, 51);
+
+}
+
+.container,.containerhome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgb(35, 102, 80);
+    padding: 40px;
+    width: 500px;
+}
+.text{
+    color: azure;
+    text-align: center;
+    text-decoration: underline;
+    margin-left: 70px;
+    padding: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.data{
+    color: azure;
+    text-align: center;
+}
+
+#email{
+   
+    margin-right: -22px;
+    margin-bottom: 5px;
+}
+#password{
+    margin-bottom: 5px;
+}
+.forgetpass{
+    text-decoration: none;
+    margin-left:60px;
+    font-size: small;
+}
+
+.btn{
+    align-items: center;
+    width: 40px;
+    margin-left: 50px;
+}
+
+
+
+.signuplink{
+    padding: 10px;
+    font-size: small;
+    margin-left: 90px;
+}
+a{
+    text-decoration: none;
+    margin-left: 5px;
+    color: rgb(213, 174, 126);
+}
+
+nav{
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+}
+
+#name{
+    margin-bottom: 5px;
+    margin-right: -22px;
+}
+#confirmpassword{
+    margin-bottom: 5px;
+    margin-right: 57px;
+}
+.registerbtn{
+      align-items: center;
+      margin-left: 70px;
+}
+.backbtn{
+    align-items: center;
+    background-color:rgb(255, 245, 233);
+    color:black;
+    border-radius: 2px;
+    width: 80px;
+    font-size: 14px;
+    padding: 1px 5px 1px 5px;
+}
+.containerhome{
+    color: aliceblue;
+    
+    text-align: center;
+}

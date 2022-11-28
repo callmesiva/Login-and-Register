@@ -1,0 +1,20 @@
+
+<nav>
+  {{#if name}}
+  <div class="logo">Hello {{name}}</div>
+   <div class="menu">
+    <a href="/auth/home">Home</a>
+    <a href="/auth/profile">profile</a>
+    <a href="#">Logout</a>
+  </div>
+  {{else}}
+   <div class="logo">Hello</div> 
+   <div class="menu">
+    <a href="home">Home</a>
+    <a href="register">Register</a>
+    <a href="logintemplate">Login</a>
+  </div>
+  {{/if}}
+</nav>
+
+<div class="containerhome">Welcome Home</div>
