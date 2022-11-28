@@ -1,5 +1,6 @@
 const db = require("../database");
 const bcrypt = require("bcryptjs");
+const  Jwt = require("jsonwebtoken");
 
 
 exports.homepage =(req,res)=>{
@@ -62,10 +63,23 @@ exports.login =(req,res)=>{
                         res.render("loginpage",{msg:"Please enter your correct password"});
                     }
                     else{
-                        res.send("success"); 
+                        const id = result[0].id;
+                        let key=1234;
+                        const token = Jwt.sign({id:id},"1234",{
+                            expiresIn: '7d',
+                        });
+                        
+                        const cookieoption = {
+                            expires: new Date(
+                                Date.now() + 7 *24*60*60*1000
+                            ),
+                            httpOnly:true,
+                        };
+                        res.cookie("loginpagecookie",token,cookieoption);
+                        res.redirect("home");
                     }
                }
-            }
+            } 
         })
     }
 
